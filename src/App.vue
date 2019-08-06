@@ -1,9 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <router-link to="/" class="navbar-item">
+          <img src="https://static.skilldeer.com/prod/images/logo.png" width="112" height="30">
+        </router-link>
+      </div>
+
+        <div class="navbar-menu ">
+        <!-- navbar start, navbar end -->
+          <div class="navbar-start">
+          <!-- navbar items -->
+            <router-link to="/explore" class="navbar-item">Explore classes</router-link>
+          </div>
+        </div>
+    </nav>
     <router-view/>
   </div>
 </template>
@@ -28,4 +39,5 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
